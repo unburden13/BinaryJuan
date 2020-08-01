@@ -1,0 +1,14 @@
+.Home{
+    background-color: wheat;
+    min-height: 100vh;
+}
+.Menu{
+    display: flex;
+}
+.MenuLeft{
+    flex-direction: row-reverse;
+    
+}
+.MenuRight{
+    flex-direction: row-reverse;
+}
