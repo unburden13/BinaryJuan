@@ -12,6 +12,15 @@ class NavBar extends Component {
               <div className="link-container">
                 <Link to="/Image" className="link">Imágen</Link>
               </div>
+              <div className="link-container">
+                <Link to="/LyricHome" className="link">Letra</Link>
+              </div>
+              <div className="link-container">
+                <Link to="/About" className="link">Acerca</Link>
+              </div>
+              <div className="link-container">
+                <Link to="/Contact" className="link">Contacto</Link>
+              </div>
           </div>
         );
     }

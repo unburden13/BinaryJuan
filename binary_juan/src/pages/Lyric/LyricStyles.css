@@ -1,0 +1,12 @@
+a.nav-link.active {
+    background-color: gray;
+    font-weight: lighter;
+  }
+
+.nav-link-custom-active{
+    background-color: gray;
+}
+/* 
+.nav-link-custom{
+    background-color: white;
+} */

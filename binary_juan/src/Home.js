@@ -1,13 +1,13 @@
 import React from 'react';
 import './Styles.css';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import {AnimationExample, PointerExample, ToneExample} from './Animation';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from './NavBar/NavBar';
 import Music from './pages/Music';
 import Image from './pages/Image';
+import Lyric from './pages/Lyric/LyricHome';
+import Contact from './pages/Contact';
+import About from './pages/About';
 
 function Home(){
     return(
@@ -16,35 +16,14 @@ function Home(){
               <Container>
                   <NavBar/>
                   <Switch>
-                    <Route exact 
-                      path="/Music"
-                      render={() => <Music name="Música"/>}/>
-                    <Route exact 
-                      path="/Image"
-                      render={() => <Image name="Imágen"/>}/>
-                    </Switch>
+                      <Route exact path="/Music" render={() => <Music name="Música"/>}/>
+                      <Route exact path="/Image" render={() => <Image name="Imágen"/>}/>
+                      <Route exact path="/LyricHome" render={() => <Lyric name="Letras"/>}/>
+                      <Route exact path="/About" render={() => <About name="Acerca"/>}/>
+                      <Route exact path="/Contact" render={() => <Contact name="Conctacto"/>}/>
+                  </Switch>
               </Container>
             </BrowserRouter>
-
-            <Container>
-                <Row>
-                    <Col>Música</Col>
-                    <Col>Imágen</Col>
-                    <Col>Letras</Col>
-                    <Col>Acerca</Col>
-                    <Col xs={6}>Contacto</Col>
-                    <Col xs={1}><a href="x">YT</a> </Col>
-                    <Col xs={1}><a href="sc">SC</a> </Col>
-                </Row>
-            </Container>
-            <Container>
-                <AnimationExample 
-                    name="example" 
-                    background="#fe3"
-                />
-                <PointerExample name="pointer"/>
-                <ToneExample name="tone"/>
-            </Container>
         </div>
     );
 }
