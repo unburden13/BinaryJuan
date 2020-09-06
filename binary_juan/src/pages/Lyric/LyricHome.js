@@ -12,7 +12,7 @@ class Lyric extends Component {
         return (
           <div>
             <h1>Letras</h1>
-            <p>Símbolos del alfabeto latino ordenadas premeditadamente.</p>
+            <p>Símbolos del alfabeto latino ordenados premeditadamente.</p>
 
             <Tab.Container id="left" defaultActiveKey="x">
               <Row>
